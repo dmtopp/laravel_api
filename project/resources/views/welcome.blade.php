@@ -8,38 +8,22 @@
         <style>
             html, body {
                 height: 100%;
-            }
-
-            body {
+                width: 100%;
                 margin: 0;
                 padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
                 font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
             }
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
+      <h1>Heyoo this is m'welcome.  Cheers!</h1>
+      @if (!$people)
+        There are no people.
+      @endif
+
+      @foreach ($people as $person)
+        <li>{{ $person }}</li>
+      @endforeach
+
     </body>
 </html>
