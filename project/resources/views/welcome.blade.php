@@ -25,5 +25,13 @@
         <button type="submit">Submit</button>
       </form>
 
+      <form action="/update" method="post">
+        <textarea placeholder="update your note" name="postit" rows="8" cols="40"></textarea>
+        <input placeholder="Update your name" name="name" />
+        <input placeholder="Note id" name="id" />
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <button type="submit">Update!</button>
+      </form>
+
     </body>
 </html>
