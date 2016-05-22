@@ -17,13 +17,13 @@
     </head>
     <body>
       <h1>Heyoo this is m'welcome.  Cheers!</h1>
-      @if (!$people)
-        There are no people.
-      @endif
 
-      @foreach ($people as $person)
-        <li>{{ $person }}</li>
-      @endforeach
+      <form action="/" method="post">
+        <textarea name="postit" rows="8" cols="40"></textarea>
+        <input placeholder="Your name" name="name" />
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <button type="submit">Submit</button>
+      </form>
 
     </body>
 </html>

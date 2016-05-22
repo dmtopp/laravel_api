@@ -1,3 +1,4 @@
 <?php
-Route::get('/', 'RootController@home');
-Route::get('about', 'RootController@about');
+Route::get('/', 'PostitController@home');
+Route::post('/', 'PostitController@create');
+Route::get('/all', 'PostitController@all');
