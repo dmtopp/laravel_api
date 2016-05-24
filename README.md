@@ -1,6 +1,3 @@
-# laravel_api
-A quick RESTful API with Laravel
+# Laravel api  
 
-This API stores post-it notes in a SQLite database.  Nothing fancy, just basic CRUD functionality.  This was made as an exercise in learning the basics of Laravel.
-
-Cheers!
+This was a small project built for the purposes of learning the basics of laravel.  Nothing fancy, just some down 'n dirty CRUD functionality
